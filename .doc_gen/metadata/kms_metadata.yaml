@@ -31,6 +31,14 @@ kms_Hello:
             - description:
               snippet_tags:
                 - kms.abapv1.list_keys
+    Python:
+      versions:
+        - sdk_version: 3
+          github: python/example_code/kms
+          excerpts:
+            - description:
+              snippet_tags:
+                - python.example_code.kms.Hello
   services:
     kms: {ListKeys}
 kms_TagResource:
