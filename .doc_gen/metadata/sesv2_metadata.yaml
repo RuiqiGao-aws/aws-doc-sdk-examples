@@ -698,3 +698,152 @@ sesv2_Scenario_EmailAttachments:
                 - python.example_code.sesv2.SESv2Wrapper.class
   services:
     sesv2: {SendEmail, SendBulkEmail, CreateEmailIdentity, CreateEmailTemplate, GetEmailIdentity, DeleteEmailTemplate, DeleteEmailIdentity}
+sesv2_CreateConfigurationSet:
+  title: Create an &SESv2; configuration set
+  title_abbrev: Create a configuration set
+  synopsis: create an &SESv2; configuration set.
+  category: Actions
+  languages:
+    Python:
+      versions:
+        - sdk_version: 3
+          github: python/example_code/sesv2/search_filter_scenario
+          sdkguide:
+          excerpts:
+            - description:
+              snippet_tags:
+                - python.example_code.sesv2.CreateConfigurationSet
+  services:
+    sesv2: {CreateConfigurationSet}
+sesv2_CreateTenant:
+  title: Create an &SESv2; tenant
+  title_abbrev: Create a tenant
+  synopsis: create an &SESv2; tenant.
+  category: Actions
+  languages:
+    Python:
+      versions:
+        - sdk_version: 3
+          github: python/example_code/sesv2/search_filter_scenario
+          sdkguide:
+          excerpts:
+            - description:
+              snippet_tags:
+                - python.example_code.sesv2.CreateTenant
+  services:
+    sesv2: {CreateTenant}
+sesv2_ListConfigurationSets:
+  title: List &SESv2; configuration sets
+  title_abbrev: List configuration sets
+  synopsis: list &SESv2; configuration sets with optional filter support.
+  category: Actions
+  languages:
+    Python:
+      versions:
+        - sdk_version: 3
+          github: python/example_code/sesv2/search_filter_scenario
+          sdkguide:
+          excerpts:
+            - description:
+              snippet_tags:
+                - python.example_code.sesv2.ListConfigurationSets
+  services:
+    sesv2: {ListConfigurationSets}
+sesv2_ListEmailIdentities:
+  title: List &SESv2; email identities
+  title_abbrev: List email identities
+  synopsis: list &SESv2; email identities with optional filter support.
+  category: Actions
+  languages:
+    Python:
+      versions:
+        - sdk_version: 3
+          github: python/example_code/sesv2/search_filter_scenario
+          sdkguide:
+          excerpts:
+            - description:
+              snippet_tags:
+                - python.example_code.sesv2.ListEmailIdentities
+  services:
+    sesv2: {ListEmailIdentities}
+sesv2_ListTenants:
+  title: List &SESv2; tenants
+  title_abbrev: List tenants
+  synopsis: list &SESv2; tenants with optional filter support.
+  category: Actions
+  languages:
+    Python:
+      versions:
+        - sdk_version: 3
+          github: python/example_code/sesv2/search_filter_scenario
+          sdkguide:
+          excerpts:
+            - description:
+              snippet_tags:
+                - python.example_code.sesv2.ListTenants
+  services:
+    sesv2: {ListTenants}
+sesv2_DeleteConfigurationSet:
+  title: Delete an &SESv2; configuration set
+  title_abbrev: Delete a configuration set
+  synopsis: delete an &SESv2; configuration set.
+  category: Actions
+  languages:
+    Python:
+      versions:
+        - sdk_version: 3
+          github: python/example_code/sesv2/search_filter_scenario
+          sdkguide:
+          excerpts:
+            - description:
+              snippet_tags:
+                - python.example_code.sesv2.DeleteConfigurationSet
+  services:
+    sesv2: {DeleteConfigurationSet}
+sesv2_DeleteTenant:
+  title: Delete an &SESv2; tenant
+  title_abbrev: Delete a tenant
+  synopsis: delete an &SESv2; tenant.
+  category: Actions
+  languages:
+    Python:
+      versions:
+        - sdk_version: 3
+          github: python/example_code/sesv2/search_filter_scenario
+          sdkguide:
+          excerpts:
+            - description:
+              snippet_tags:
+                - python.example_code.sesv2.DeleteTenant
+  services:
+    sesv2: {DeleteTenant}
+sesv2_SearchFilterBasics:
+  title: Search and filter &SESv2; resources
+  title_abbrev: Search and filter resources
+  synopsis: demonstrate the new filter capability on list operations for configuration sets, email identities, and tenants.
+  category: Basics
+  synopsis_list:
+    - Create multiple configuration sets, email identities, and tenants.
+    - List all configuration sets without filters as a baseline.
+    - Filter configuration sets using the new ConfigurationSetFilter.
+    - List all email identities without filters as a baseline.
+    - Filter email identities using the new IdentityFilter.
+    - List all tenants without filters as a baseline.
+    - Filter tenants using the new ListTenantsFilter.
+    - Demonstrate pagination combined with filters.
+    - Clean up all created resources.
+  languages:
+    Python:
+      versions:
+        - sdk_version: 3
+          github: python/example_code/sesv2/search_filter_scenario
+          sdkguide:
+          excerpts:
+            - description: Run the search and filter scenario.
+              snippet_tags:
+                - python.example_code.sesv2.SearchFilterBasics
+            - description: Wrapper class for SES v2 search and filter operations.
+              snippet_tags:
+                - python.example_code.sesv2.SesV2SearchFilterWrapper.decl
+  services:
+    sesv2: {CreateConfigurationSet, CreateTenant, ListConfigurationSets, ListEmailIdentities, ListTenants, DeleteConfigurationSet, DeleteTenant}
